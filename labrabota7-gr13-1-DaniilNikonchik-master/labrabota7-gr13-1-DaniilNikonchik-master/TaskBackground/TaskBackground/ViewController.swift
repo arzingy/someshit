@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelBackground.text = "Background image: bg1.jpg"
+        labelBackground.text = "First picture"
         labelBackground.textColor = UIColor.white
                 
                 view.backgroundColor = UIColor(patternImage: UIImage(named: "bg1")!)
@@ -26,11 +26,11 @@ class ViewController: UIViewController {
     @IBAction func backgroundSwitchTapped(_ sender: Any) {
         if switchBackground.isOn
                 {
-            labelBackground.text = "Background image: bg1.jpg"
+            labelBackground.text = "cat"
                     view.backgroundColor = UIColor(patternImage: UIImage(named: "bg1")!)
                 }
                 else{
-                    labelBackground.text = "Background image: bg2.jpg"
+                    labelBackground.text = "dog"
                     view.backgroundColor = UIColor(patternImage: UIImage(named: "bg2")!)
                 }
         
