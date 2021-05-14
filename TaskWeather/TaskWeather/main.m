@@ -1,9 +1,6 @@
 //
 //  main.m
-//  TaskWeather
-//
-//  Created by Daniil on 6.05.21.
-//
+//  Task2
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"

@@ -1,10 +1,6 @@
 //
 //  ViewController.m
-//  TaskWeather
-//
-//  Created by Daniil on 6.05.21.
-//  With the help Dzmitry Semenovich
-//
+//  Task2
 
 #import "ViewController.h"
 
@@ -18,8 +14,7 @@
     [super viewDidLoad];
     
     temperatureData = [NSMutableDictionary dictionary];
-    weatherData = [NSMutableDictionary dictionary];
-    
+   
     _button.layer.cornerRadius = 5;
     _button.layer.borderWidth = 1;
     
@@ -39,7 +34,7 @@
     
     
     NSString *city = self.textField.text;
-    self.citiName.text = city;
+    self.city.text = city;
     self.temperature.text = [temperatureData[city] stringValue];
     
     
@@ -49,11 +44,11 @@
     int intValue=[temperature intValue];
     if(intValue>=18)
     {
-        self.view.backgroundColor = [UIColor systemYellowColor];
+        self.view.backgroundColor = [UIColor systemRedColor];
     }
     if(intValue<18&&intValue>=15)
     {
-        self.view.backgroundColor = [UIColor systemRedColor];
+        self.view.backgroundColor = [UIColor systemYellowColor];
     }
     if(intValue>=10&&intValue<15)
     {
